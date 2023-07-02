@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CameYA.Api", "CameYA\CameYA.Api.csproj", "{081D1953-5411-4F8C-A7D0-73C00352B1CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameYA.Core", "CameYA.Core\CameYA.Core.csproj", "{9220CBDD-8CB1-4741-B6F5-6A2D8D96AA6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameYA.Infrastructure", "CameYA.Infrastructure\CameYA.Infrastructure.csproj", "{B854629C-3B56-4208-9543-E3E74862C9F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{97823429-0745-4416-B21B-7BF1474F7180}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameYA.UnitTests", "CameYA.UnitTests\CameYA.UnitTests.csproj", "{FF13752A-8E69-468C-B674-15B7044A6358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameYA.IntegrationsTests", "CameYA.IntegrationsTests\CameYA.IntegrationsTests.csproj", "{4F22EEC5-5BDE-48C0-8239-9772D4080C55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{081D1953-5411-4F8C-A7D0-73C00352B1CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{081D1953-5411-4F8C-A7D0-73C00352B1CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{081D1953-5411-4F8C-A7D0-73C00352B1CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{081D1953-5411-4F8C-A7D0-73C00352B1CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9220CBDD-8CB1-4741-B6F5-6A2D8D96AA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9220CBDD-8CB1-4741-B6F5-6A2D8D96AA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9220CBDD-8CB1-4741-B6F5-6A2D8D96AA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9220CBDD-8CB1-4741-B6F5-6A2D8D96AA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B854629C-3B56-4208-9543-E3E74862C9F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B854629C-3B56-4208-9543-E3E74862C9F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B854629C-3B56-4208-9543-E3E74862C9F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B854629C-3B56-4208-9543-E3E74862C9F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF13752A-8E69-468C-B674-15B7044A6358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF13752A-8E69-468C-B674-15B7044A6358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF13752A-8E69-468C-B674-15B7044A6358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF13752A-8E69-468C-B674-15B7044A6358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F22EEC5-5BDE-48C0-8239-9772D4080C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F22EEC5-5BDE-48C0-8239-9772D4080C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F22EEC5-5BDE-48C0-8239-9772D4080C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F22EEC5-5BDE-48C0-8239-9772D4080C55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF13752A-8E69-468C-B674-15B7044A6358} = {97823429-0745-4416-B21B-7BF1474F7180}
+		{4F22EEC5-5BDE-48C0-8239-9772D4080C55} = {97823429-0745-4416-B21B-7BF1474F7180}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {179A8BBB-6E9E-4748-855F-ADA6C5779F03}
+	EndGlobalSection
+EndGlobal
