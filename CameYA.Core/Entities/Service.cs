@@ -1,6 +1,6 @@
 ﻿namespace CameYA.Core.Entities
 {
-    public class Service : UserEntity
+    public class Service
     {
         public string Id_service { get; set; }
         public int dni_client { get; set; }

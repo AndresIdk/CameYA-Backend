@@ -4,6 +4,6 @@
     {
         public string detail { get; set; }
         public string category { get; set; }
-        public long hour_price { get; set; }
+        public long HourPrice { get; set; }
     }
 }

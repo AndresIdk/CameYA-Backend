@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
+﻿using CameYA.Core.Interfaces.IServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CameYA.Api.Controllers
@@ -8,11 +7,17 @@ namespace CameYA.Api.Controllers
     [ApiController]
     public class ClientController : ControllerBase
     {
+        private readonly IClientService _clientService;
+
+        public ClientController(IClientService clientService)
+        {
+            _clientService = clientService;
+        }
 
         [HttpGet]
-        public ActionResult Get()
+        public ActionResult GetAll()
         {
-           return Ok("Hola");
+           return Ok("Client");
         }
     }
 }
