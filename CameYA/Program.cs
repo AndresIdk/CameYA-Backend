@@ -10,7 +10,13 @@ using FluentValidation.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers(opc =>
+{
+    // Middleware de validacion de excepciones de logica de negocio
+    opc.Filters.Add<BusinessExceptionFilters>();
+    // Middleware de validacion de modelos
+    opc.Filters.Add<ModelFilters>();
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 // Inyeccion de dependencias - Unit Of Work
@@ -19,11 +25,7 @@ builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IWorkerService, WorkerService>();
 // Registro mis mapeos con AutoMapper a nivel de ASM
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-// Middleware de validacion de modelos
-builder.Services.AddMvc(opc =>
-{
-    opc.Filters.Add<ModelFilters>();
-});
+
 
 // Registro de validaciones de modelos
 builder.Services.AddFluentValidationAutoValidation();

@@ -26,7 +26,7 @@ namespace CameYA.Api.Controllers
             var workers = await _workerService.GetAll();
             var workersDTO = _mapper.Map<IEnumerable<WorkerDTO>>(workers);
             var response = new GenericResponse<IEnumerable<WorkerDTO>>(workersDTO);
-            return Ok(response);
+            return Ok(response); 
         }
 
         [HttpPost]
@@ -35,7 +35,8 @@ namespace CameYA.Api.Controllers
             var worker = _mapper.Map<Worker>(workerDTO);
             var response = await _workerService.Insert(worker);
             var workerDTOMap = _mapper.Map<WorkerDTO>(response);
-            return Ok(workerDTOMap);
+            var res = new GenericResponse<WorkerDTO>(workerDTOMap);
+            return Ok(res);
         }
     }
 }
